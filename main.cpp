@@ -10,8 +10,7 @@ int main() {
     // Task: calculate the number of notebooks you can afford and output it.
     // Hint: use an integer to store the result.
     int result = balance / price;
-    cout << result;
-    cout << "\n";
+    cout << result << endl;
     // Task: calculate the amount left over on your account after the purchase and output it on a new line.
     // Hint: calculate the total price of the purchase, then substract it from the balance.
     int totalPrice = result * price;
