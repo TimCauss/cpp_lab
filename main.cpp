@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    // your account's balance
-    auto balance = 2452.4;
-    // price for each notebook
-    auto price = 259.99;
 
-    // Task: calculate the number of notebooks you can afford and output it.
-    // Hint: use an integer to store the result.
-    int result = balance / price;
-    cout << result << endl;
-    // Task: calculate the amount left over on your account after the purchase and output it on a new line.
-    // Hint: calculate the total price of the purchase, then substract it from the balance.
-    int totalPrice = result * price;
-    cout << balance - totalPrice;
-
+int max_of_four(int a, int b, int c, int d) {
+    int temp[] = {a, b, c, d};
+    int max = 0;
+    for (int i : temp) {
+        if (max < i) {
+            max = i;
+        }
+    }
+    return max;
 }
+
+int main() {
+    cout << max_of_four(10, 20, 30, 45);
+}
+
